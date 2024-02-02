@@ -32,7 +32,3 @@ The script uses Windows Forms and Drawing libraries to create the GUI, allowing 
 - Enumerating network adapters.
 - Saving and applying IP configuration profiles.
 - Dynamically updating the GUI based on selected profiles and adapters.
-
-## Contributing
-
-Contributions are welcome! If you have improvements or bug fixes, please feel free to fork the repository and submit a pull request.
