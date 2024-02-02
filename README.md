@@ -1,9 +1,38 @@
-A System.Windows.Forms.Form written in PowerShell to provide a GUI and skip endless UAC prompts when frequently changing IP addresses.
+# PowerShell IP Configuration GUI
 
-Includes profile storage so you only have to type your settings in once!
+This PowerShell script provides a user-friendly GUI for quickly changing IP addresses on Windows machines without the need for repeated User Account Control (UAC) prompts. It includes features for storing IP configuration profiles for easy reuse.
 
-Setup:
-Download and extract to wherever you want
-Create a shortcut to the batch file on your desktop for easy access and tick the "Run as administrator" box within the shortcut's Properties->Advanced.
+## Features
 
-Requires "Network Configuration Operators" group membership as a minimum.
+- **Graphical User Interface**: Simplifies the process of changing IP addresses and network settings.
+- **Profile Management**: Save and manage multiple network profiles for quick switching.
+- **UAC Prompt Avoidance**: Designed to minimize the need for UAC prompts through efficient permission usage.
+
+## Requirements
+
+- Membership in the **"Network Configuration Operators"** group is required to change IP settings without elevated privileges.
+- **PowerShell 5.1** or higher.
+- **Windows 10/11**.
+
+## Setup Instructions
+
+1. **Download**: Download the script and extract it to a desired location on your computer.
+2. **Shortcut Creation**: For convenient access, create a shortcut to the batch file included with the script. Right-click the shortcut, go to `Properties -> Advanced`, and check the "Run as administrator" option.
+3. **Launch**: Double-click the shortcut to launch the GUI.
+
+## Usage
+
+- **Changing IP Settings**: Select a network adapter, choose a profile (or create a new one), and apply the settings.
+- **Profile Management**: Easily save current settings as a new profile for future use. Profiles include IP address, subnet mask, and gateway configurations.
+
+## Script Overview
+
+The script uses Windows Forms and Drawing libraries to create the GUI, allowing users to interact with network settings visually. It includes functions for:
+
+- Enumerating network adapters.
+- Saving and applying IP configuration profiles.
+- Dynamically updating the GUI based on selected profiles and adapters.
+
+## Contributing
+
+Contributions are welcome! If you have improvements or bug fixes, please feel free to fork the repository and submit a pull request.
