@@ -11,7 +11,7 @@ This PowerShell script provides a user-friendly GUI for quickly changing IP addr
 ## Requirements
 
 - Membership in the **"Network Configuration Operators"** group is required to change IP settings without elevated privileges.
-- **PowerShell 5.1** or higher.
+- **PowerShell 5.1** (it may work on higher versions too - untested).
 - **Windows 10/11**.
 
 ## Setup Instructions
